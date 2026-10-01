@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+main, header, nav, footer{
+    border: 1px solid red;
+}
+main {
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+header, footer {
+    flex: 0 0 100%;
+}
+nav {
+    flex: 0 0 250px;
+}
+article {
+    flex: 1 1 auto;
+}
+.block {
+    display: flex;
+
+}
+.block label{
+    flex: 0 0 50px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+@media screen and (max-width:700px) {
+    nav{
+        flex: 0 0 100%;
+    }
+    
+}
+@media screen and (max-width:400px) {
+    .block{
+        flex-direction: column;
+    }
+    .block label{
+        flex: 0 0 100%;
+        text-align: left;
+        padding: 15px;
+    }
+    
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <header><h1>Űrlap</h1></header>
+      <nav>
+        <ul>
+          <li><a href="">menü</a></li>
+          <li><a href="">menü</a></li>
+          <li><a href="">menü</a></li>
+        </ul>
+      </nav>
+      <article>
+        <form>
+            <fieldset>
+                <legend>Személyes adatok</legend>
+          <div class="block">
+            <label for="nev">Név</label>
+            <input
+              type="text"
+              name="nev"
+              id="nev"
+              placeholder="Írd be a neved"
+            />
+          </div>
+          <div class="block">
+            <label for="psw">Jelszó</label>
+            <input
+              type="password"
+              name="psw"
+              id="psw"
+              placeholder="Írd be a jelszavad"
+            />
+          </div>
+          <div class="block">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Írd be az emailcímed"
+            />
+            
+          </div>
+        </fieldset>
+        <fieldset>
+            <legend>Nem</legend>
+            <label for="ffi">Férfi</label> <input type="radio" name="nem" id="ffi">
+            <label for="no">Nő</label> <input type="radio" name="nem" id="no">
+            <label for="heli">Wallmart bag</label> <input type="radio" name="nem" id="heli">
+        </fieldset>
+        <fieldset>
+            <legend>Hobbiaid-többet is jelölhetsz</legend>
+            <label for="foto">fotózás</label> <input type="checkbox" name="hobbi" id="foto">
+            <label for="fpv">FpvDrón</label> <input type="checkbox" name="hobbi" id="fpv">
+            <label for="jatek">Videójátékok</label> <input type="checkbox" name="hobbi" id="jatek">
+            <label for="festes">Festés</label> <input type="checkbox" name="hobbi" id="festes">
+            <label for="foto">fotózás</label> <input type="checkbox" name="hobbi" id="foto">
+        </fieldset>
+        <input type="submit" value="küldes" />
+        </form>
+      </article>
+      <footer>
+        <p>Finta Károly</p>
+      </footer>
+    </main>
+  </body>
+</html>
